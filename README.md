@@ -14,7 +14,10 @@ Transformer-based models (e.g. DistilBERT) will significantly outperform traditi
 - Source: [Kaggle – WELFake](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification)
 - Format: CSV with `title`, `text`, and `label` columns (0 = fake, 1 = real)
 
-<!-- ## Models
+## Set up
+Download the dataset from the link above, move to directory and then run the eda and preprocessing notebooks. The resulting preprocessed data file should show up on the root directory of the project. This is the cleaned dataset used for modelling.
+
+## Models
 We compare three tiers of models to measure the performance gap between traditional and modern NLP approaches:
 
 | Model | Type |
@@ -33,9 +36,8 @@ We compare three tiers of models to measure the performance gap between traditio
 ## Project Structure
 ```
 fake-news-detection/
-├── data/               # Raw and processed datasets
-├── notebooks/          # Exploration and model training notebooks
-├── models/             # Saved model checkpoints
-├── src/                # Reusable scripts (preprocessing, training, eval)
-└── README.md
-``` -->
+├── eda.ipynb                # Notebook used for EDA
+├── modelling.ipynb          # Notebook used for modelling and running all models
+├── preprocessing.ipynb      # Notebook used to feature engineer and preprocess the data before modelling
+├── README.md                
+```
